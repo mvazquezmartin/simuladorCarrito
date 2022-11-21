@@ -99,7 +99,7 @@ function renderizarCarrito() {
             return itemId === item ? total += 1 : total;
         }, 0);
         const miNodo = document.createElement('li');
-        miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
+        miNodo.classList.add('list-group-item', 'text-right', 'mx-2', "d-flex", "justify-content-between");
         miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${divisa}${miItem[0].precio}`;
         const miBoton = document.createElement('button');
         miBoton.classList.add('btn', 'btn-danger', 'mx-5');
